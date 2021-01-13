@@ -1,0 +1,26 @@
+Name: Lisa Wang
+UCLA ID number: 105502901
+Class: CS31 
+Project 1 
+
+For original.cpp: 
+because I did not have any code-transfering mistakes, I didn't change the original.cpp file. The inputs I tested are 0 when prompted to enter in the value for number of electoral college electors, 0 for republicanVotes, and 0 for democraticVotes. The result I received was -nan(ind)% for both votes. This is a test case in which the computer is dividing by 0 and the result is indeterminate. This is unusal, and the condition result statements do not show. 
+
+Next I tried having 10 Electoral College electors, 15 Republican party candidates being voted for, and 6 Democratic party candidates being voted for. This results in the computer declaring the Republican party as the winner. However, it is nonsensical for the result to have 150.0% of Republican votes, the computer doesn't recognize that and still goes on computing. 
+
+Another nonsensical result is that once I enter 20 electoral college electors, 4 Republican party candidates and 9 Democratic party candidates, the program results in declaring the Democratic party as the winner. However, it is nonsensical for the result to be declared before every electoral college vote is accounted for. The computer should recognize this and prompt for a re-entering of votes (numbers).
+
+the error I introduced in logic_error.cpp: 
+
+I changed the original code of (100.0 * democraticVotes) / totalVoters to having the denominator being democraticVotes, this would change most test case results in this variable. This is a logical error because a logical error gets past the computer and the project can be run. However, it produces a misintended result/ process of executing the code.
+
+I also changed the plus sign of republicanVotes + democraticVotes into a minus sign, the condition would prompt a return statement that is most likely logically incompatible. 
+
+the error I introduced in compile_error.cpp:
+
+one type of compile error in C++ is missing a semicolon at the end of the line of code in line 13. Without this, the code will have an compile error.
+
+another type of compile error in C++ is missing a (end or starting) quotation mark for a cout (output) in line 19. 
+
+another type of compile error in C++ is missing the namespace (for example, the ios:: in line 25) in front of fixed.
+
